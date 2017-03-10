@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Change Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <div class="container" </head>
+
+        <body>
+            <h1>Change Calculator</h1>
+            <!-- sale amount entered -->
+            <!-- <div class="input-group">
+  <span class="input-group-addon">Amount of the sale price.</span>
+  <input type="number" id="saleEntered"class="form-control" placeholder="amount" aria-describedby="sizing-addon2"> -->
+  
+            <div class="input-group">
+                <span class="input-group-addon">Amount of sale $</span>
+                <input type="text" maxlength="15" id="saleEntered" class="salesIn" placeholder="amount" aria-describedby="basic-addon1">
+            </div>
+            <!-- customer amount paid entered -->
+            <div class="input-group">
+                <span class="input-group-addon">Amount from customer $</span>
+                <input type="number" id="custEntered" class="form-control" placeholder="amount" aria-describedby="sizing-addon2">
+            </div>
+            <div class="btn-group">
+                <button class="btn" onclick="buttonFinal()" type="button" id="calcButtinOne" aria-haspopup="true" aria-expanded="false">
+                    Calculate Total Change <span class="caret"></span>
+                </button>
+            </div>
+            <p class="calc" id="output"></p>
+            <div class="btn-group">
+                <p class="btn" onclick="" type="button" id="calcButtinTwo" aria-haspopup="true" aria-expanded="false">
+                    Return to Customer <span class="caret"></span>
+                </p>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <tbody>
+                        <tr>
+                            <td>- Dollars</td>
+                            <td id='dollarsRemain'></td>
+                        </tr>
+                        <tr>
+                            <td>- Quarters</td>
+                            <td id='quartersRemain'></td>
+                        </tr>
+                        <tr>
+                            <td>- Dimes</td>
+                            <td id='dimesRemain'></td>
+                        </tr>
+                        <tr>
+                            <td>- Nickels</td>
+                            <td id='nickelsRemain'></td>
+                        </tr>
+                        <tr>
+                            <td>- Pennies</td>
+                            <td id='penniesRemain'></td>
+                        </tr>
+                </thead>
+                </tbody>
+    </div>
+    <script src="jquery-3.1.1.js">
+    </script>
+    <script src="index.js"></script>
+    </body>
+
+</html>
